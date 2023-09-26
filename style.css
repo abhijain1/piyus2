@@ -1,0 +1,59 @@
+/* Reset some default styles for the page */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Create a container to hold the image and text */
+.container {
+    position: relative;
+    max-width: 100%;
+}
+
+/* Style the image to fill the container */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style the overlay text */
+.overlay-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    color: #fff;
+    border-radius: 10px;
+    width: 80%;
+}
+
+/* Style the heading and paragraph inside the overlay text */
+.overlay-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    font-size: 18px;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    .overlay-text {
+        top: 70%; /* Shift the text further down on smaller screens */
+        padding: 20px; /* Reduce padding for smaller screens */
+        width: 90%; /* Wider text box on smaller screens */
+    }
+
+    .overlay-text h1 {
+        font-size: 20px; /* Reduce heading font size on smaller screens */
+    }
+
+    .overlay-text p {
+        font-size: 16px; /* Reduce paragraph font size on smaller screens */
+    }
+}
